@@ -1,4 +1,15 @@
-<app-main></app-main>
-<main class="flex justify-center">
-  <router-outlet></router-outlet>
+<main>
+  <div class="flex justify-start">
+    <!-- nav -->
+    <div>
+      <app-main></app-main>
+    </div>
+
+    <!-- card -->
+    <div
+      class="m-10 p-6 w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+    >
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </main>
