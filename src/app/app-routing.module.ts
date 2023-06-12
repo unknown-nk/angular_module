@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TableComponent } from './main/table/table.component';
 import { HomeComponent } from './main/home/home.component';
+import { CalculatorComponent } from './main/calculator/calculator.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'table',
     component: TableComponent,
+  },
+  {
+    path: 'calculator',
+    component: CalculatorComponent,
   },
 ];
 

@@ -1,0 +1,26 @@
+<div class="calculator-box">
+  <div class="show-number">
+    <p>{{ numberArea }}</p>
+  </div>
+  <div class="input-area">
+    <div (click)="clickNumber('7')">7</div>
+    <div (click)="clickNumber('8')">8</div>
+    <div (click)="clickNumber('9')">9</div>
+    <div class="other-color" (click)="div()">÷</div>
+    <div (click)="clickNumber('4')">4</div>
+    <div (click)="clickNumber('5')">5</div>
+    <div (click)="clickNumber('6')">6</div>
+    <div class="other-color" (click)="mul()">×</div>
+    <div (click)="clickNumber('1')">1</div>
+    <div (click)="clickNumber('2')">2</div>
+    <div (click)="clickNumber('3')">3</div>
+    <div class="other-color" (click)="sum()">+</div>
+    <div (click)="clickNumber('0')">0</div>
+    <div (click)="clickNumber('00')">00</div>
+    <div (click)="clickNumber('.')">.</div>
+    <div class="other-color" (click)="sub()">-</div>
+    <div (click)="reset()">AC</div>
+    <div (click)="delete()">del</div>
+    <div class="equal" (click)="equal()">=</div>
+  </div>
+</div>
