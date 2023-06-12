@@ -11,6 +11,7 @@ import { NormalCalComponent } from './main/calculator/normal-cal/normal-cal.comp
 import { SwiperComponent } from './main/swiper/swiper.component';
 import { CanvasPenComponent } from './main/canvas-pen/canvas-pen.component';
 import { NgxSignaturePadModule } from '@eve-sama/ngx-signature-pad';
+import { NgPipesModule } from 'ngx-pipes';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,12 @@ import { NgxSignaturePadModule } from '@eve-sama/ngx-signature-pad';
     SwiperComponent,
     CanvasPenComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule,NgxSignaturePadModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgxSignaturePadModule,
+    NgPipesModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
