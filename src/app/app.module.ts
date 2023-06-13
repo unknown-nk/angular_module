@@ -12,6 +12,7 @@ import { SwiperComponent } from './main/swiper/swiper.component';
 import { CanvasPenComponent } from './main/canvas-pen/canvas-pen.component';
 import { NgxSignaturePadModule } from '@eve-sama/ngx-signature-pad';
 import { NgPipesModule } from 'ngx-pipes';
+import { OneTimeCodeComponent } from './main/one-time-code/one-time-code.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import { NgPipesModule } from 'ngx-pipes';
     NormalCalComponent,
     SwiperComponent,
     CanvasPenComponent,
+    OneTimeCodeComponent,
   ],
   imports: [
     BrowserModule,
