@@ -9,7 +9,9 @@ import { HomeComponent } from './main/home/home.component';
 import { CalculatorComponent } from './main/calculator/calculator.component';
 import { NormalCalComponent } from './main/calculator/normal-cal/normal-cal.component';
 import { SwiperComponent } from './main/swiper/swiper.component';
-
+import { CanvasPenComponent } from './main/canvas-pen/canvas-pen.component';
+import { NgxSignaturePadModule } from '@eve-sama/ngx-signature-pad';
+import { NgPipesModule } from 'ngx-pipes';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,13 +20,16 @@ import { SwiperComponent } from './main/swiper/swiper.component';
     HomeComponent,
     CalculatorComponent,
     NormalCalComponent,
-    SwiperComponent
+    SwiperComponent,
+    CanvasPenComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxSignaturePadModule,
+    NgPipesModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

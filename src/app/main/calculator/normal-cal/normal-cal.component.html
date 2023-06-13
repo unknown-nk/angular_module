@@ -1,6 +1,6 @@
 <div class="calculator-box">
   <div class="show-number">
-    <p>{{ numberArea }}</p>
+    <p>{{ numberArea | number : "1.0-5" }}</p>
   </div>
   <div class="input-area">
     <div (click)="clickNumber('7')">7</div>

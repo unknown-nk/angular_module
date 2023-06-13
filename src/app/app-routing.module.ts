@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { TableComponent } from './main/table/table.component';
 import { HomeComponent } from './main/home/home.component';
 import { CalculatorComponent } from './main/calculator/calculator.component';
+import { CanvasPenComponent } from './main/canvas-pen/canvas-pen.component';
+import { SwiperComponent } from './main/swiper/swiper.component';
 
 const routes: Routes = [
   {
@@ -16,6 +18,14 @@ const routes: Routes = [
   {
     path: 'calculator',
     component: CalculatorComponent,
+  },
+  {
+    path: 'canvas-pen',
+    component: CanvasPenComponent,
+  },
+  {
+    path: 'swiper',
+    component: SwiperComponent,
   },
 ];
 
