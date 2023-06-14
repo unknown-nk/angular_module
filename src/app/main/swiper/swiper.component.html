@@ -1,1 +1,6 @@
-<p>swiper works!</p>
+
+<swiper-container #swiperRef [config]="config" (activeindexchange)="onActiveIndexChange()" class="w-[310px] h-[450px] pb-6 bg-blue-600 " >
+  <ng-container   *ngFor="let item of sliders">
+    <swiper-slide class="sliders">{{item}}</swiper-slide>
+  </ng-container>
+</swiper-container>
