@@ -1,4 +1,4 @@
-import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,7 +13,8 @@ import { CanvasPenComponent } from './main/canvas-pen/canvas-pen.component';
 import { NgxSignaturePadModule } from '@eve-sama/ngx-signature-pad';
 import { NgPipesModule } from 'ngx-pipes';
 import { OneTimeCodeComponent } from './main/one-time-code/one-time-code.component';
-
+import { EditorComponent } from './main/editor/editor.component';
+import { EditorModule } from '@tinymce/tinymce-angular';
 
 @NgModule({
   declarations: [
@@ -26,16 +27,17 @@ import { OneTimeCodeComponent } from './main/one-time-code/one-time-code.compone
     SwiperComponent,
     CanvasPenComponent,
     OneTimeCodeComponent,
+    EditorComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgxSignaturePadModule,
     NgPipesModule,
-
+    EditorModule,
   ],
-  providers: [  ],
+  providers: [],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {}

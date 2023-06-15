@@ -6,6 +6,7 @@ import { CalculatorComponent } from './main/calculator/calculator.component';
 import { CanvasPenComponent } from './main/canvas-pen/canvas-pen.component';
 import { SwiperComponent } from './main/swiper/swiper.component';
 import { OneTimeCodeComponent } from './main/one-time-code/one-time-code.component';
+import { EditorComponent } from './main/editor/editor.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'one-time-code',
     component: OneTimeCodeComponent,
+  },
+  {
+    path: 'editor',
+    component: EditorComponent,
   },
 ];
 
