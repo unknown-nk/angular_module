@@ -15,6 +15,11 @@ import { NgPipesModule } from 'ngx-pipes';
 import { OneTimeCodeComponent } from './main/one-time-code/one-time-code.component';
 import { EditorComponent } from './main/editor/editor.component';
 import { EditorModule } from '@tinymce/tinymce-angular';
+import { DataSheetComponent } from './main/data-sheet/data-sheet.component';
+import { RouterModule } from '@angular/router';
+import { PopupComponent } from './main/popup/popup.component';
+import { PopupModule } from './main/popup/popup.module';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -28,15 +33,20 @@ import { EditorModule } from '@tinymce/tinymce-angular';
     CanvasPenComponent,
     OneTimeCodeComponent,
     EditorComponent,
+    DataSheetComponent,
+    PopupComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     NgxSignaturePadModule,
     NgPipesModule,
     EditorModule,
+    RouterModule,
+    PopupModule,
+    AppRoutingModule,
   ],
-  providers: [],
+  // TODO: 這邊處理了網頁重整後空白的問題 但路由上會多一個#
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
