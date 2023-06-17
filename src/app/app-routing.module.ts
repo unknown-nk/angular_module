@@ -37,6 +37,11 @@ const routes: Routes = [
     path: 'editor',
     component: EditorComponent,
   },
+  {
+    path: 'popup',
+    loadChildren: () =>
+      import('./main/popup/popup.module').then((mod) => mod.PopupModule),
+  },
 ];
 
 @NgModule({

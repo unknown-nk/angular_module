@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular_module",
+            "outputPath": "dist/angular_module/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -93,13 +93,55 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
-         
+              "src/styles.scss",
+              "node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css",
+    "node_modules/@fortawesome/fontawesome-free/css/all.css",
+    "node_modules/@ng-select/ng-select/themes/default.theme.css"
+
             ],
             "scripts": [
- 
+
             ]
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/angular_module/server",
+            "main": "src/main.server.ts",
+            "tsConfig": "tsconfig.server.json",
+            "inlineStyleLanguage": "scss"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "vendorChunk": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "app-shell": {
+          "builder": "@angular-devkit/build-angular:app-shell",
+          "options": {
+            "route": "shell"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "angular_module:build:production",
+              "serverTarget": "angular_module:server:production"
+            },
+            "development": {
+              "browserTarget": "angular_module:build:development",
+              "serverTarget": "angular_module:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
