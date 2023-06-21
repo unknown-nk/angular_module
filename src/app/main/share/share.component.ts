@@ -18,12 +18,12 @@ export class ShareComponent {
 
   shareButton() {
     // const img:File[] =Object.freeze(Array.from(this.shareImage))
-    const shareData = {
-      title: '測試',
-      text: '我在測試分享',
-      url: 'https://www.youtube.com/?gl=TW&hl=zh-tw',
-      // files: img,
-    };
+    // const shareData = {
+    //   title: '測試',
+    //   text: '我在測試分享',
+    //   url: 'https://www.youtube.com/?gl=TW&hl=zh-tw',
+    //   // files: img,
+    // };
     let file = new File([this.blobContent], 'image.png', {
       type: this.blobContent.type,
     });
@@ -34,8 +34,6 @@ export class ShareComponent {
       navigator
         .share({
           files: filesArray,
-          title: '測試',
-          text: '我在測試分享',
         })
         .then(() => {
           this.afterText = '分享成功';
