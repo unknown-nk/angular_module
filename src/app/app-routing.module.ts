@@ -7,6 +7,7 @@ import { CanvasPenComponent } from './main/canvas-pen/canvas-pen.component';
 import { SwiperComponent } from './main/swiper/swiper.component';
 import { OneTimeCodeComponent } from './main/one-time-code/one-time-code.component';
 import { EditorComponent } from './main/editor/editor.component';
+import { ShareComponent } from './main/share/share.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
     path: 'popup',
     loadChildren: () =>
       import('./main/popup/popup.module').then((mod) => mod.PopupModule),
+  },
+  {
+    path: 'share',
+    component: ShareComponent,
   },
 ];
 
