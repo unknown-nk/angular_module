@@ -20,6 +20,7 @@ import { RouterModule } from '@angular/router';
 import { PopupComponent } from './main/popup/popup.component';
 import { PopupModule } from './main/popup/popup.module';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+// import { FacebookModule } from 'ngx-facebook';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     RouterModule,
     PopupModule,
     AppRoutingModule,
+    // FacebookModule.forRoot(),
   ],
   // TODO: 這邊處理了網頁重整後空白的問題 但路由上會多一個#
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
