@@ -8,6 +8,7 @@ import { SwiperComponent } from './main/swiper/swiper.component';
 import { OneTimeCodeComponent } from './main/one-time-code/one-time-code.component';
 import { EditorComponent } from './main/editor/editor.component';
 import { ShareComponent } from './main/share/share.component';
+import { MediaComponent } from './main/media/media.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: 'editor',
     component: EditorComponent,
+  },
+  {
+    path: 'media',
+    component: MediaComponent,
   },
   {
     path: 'popup',

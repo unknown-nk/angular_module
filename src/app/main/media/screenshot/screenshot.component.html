@@ -1,0 +1,15 @@
+<h1 class="text-2xl font-bold">截圖功能</h1>
+
+<div #screenshotAreaID class="screenshotArea">
+  <div class="bg"><p>nu</p></div>
+</div>
+
+<button
+  class="my-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+  (click)="changeImg()"
+>
+  截圖
+</button>
+<p>查看截圖</p>
+
+<img src="{{ shareImage }}" alt="" class="my4" />
