@@ -20,6 +20,8 @@ import { RouterModule } from '@angular/router';
 import { PopupComponent } from './main/popup/popup.component';
 import { PopupModule } from './main/popup/popup.module';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { MediaComponent } from './main/media/media.component';
+import { ScreenshotComponent } from './main/media/screenshot/screenshot.component';
 // import { FacebookModule } from 'ngx-facebook';
 
 @NgModule({
@@ -36,6 +38,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     EditorComponent,
     DataSheetComponent,
     PopupComponent,
+    MediaComponent,
+    ScreenshotComponent,
   ],
   imports: [
     BrowserModule,

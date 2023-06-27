@@ -17,12 +17,10 @@ export class ShareComponent {
   ngOnInit(): void {}
 
   shareButton() {
-    // const img:File[] =Object.freeze(Array.from(this.shareImage))
     // const shareData = {
     //   title: '測試',
     //   text: '我在測試分享',
     //   url: 'https://www.youtube.com/?gl=TW&hl=zh-tw',
-    //   // files: img,
     // };
     let file = new File([this.blobContent], 'image.png', {
       type: this.blobContent.type,
@@ -46,19 +44,6 @@ export class ShareComponent {
     } else {
       console.log('失敗');
     }
-
-    // if (navigator.share) {
-    //   navigator
-    //     .share(shareData)
-    //     .then(() => {
-    //       this.afterText = '分享成功';
-    //       console.log('success');
-    //     })
-    //     .catch((error) => {
-    //       this.afterText = '分享失敗';
-    //       console.log('error', error);
-    //     });
-    // }
   }
 
   changeImg() {
