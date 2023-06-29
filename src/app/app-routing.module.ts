@@ -9,6 +9,7 @@ import { OneTimeCodeComponent } from './main/one-time-code/one-time-code.compone
 import { EditorComponent } from './main/editor/editor.component';
 import { ShareComponent } from './main/share/share.component';
 import { MediaComponent } from './main/media/media.component';
+import { GameComponent } from './main/game/game.component';
 
 const routes: Routes = [
   {
@@ -40,8 +41,8 @@ const routes: Routes = [
     component: EditorComponent,
   },
   {
-    path: 'media',
-    component: MediaComponent,
+    path: 'share',
+    component: ShareComponent,
   },
   {
     path: 'popup',
@@ -49,8 +50,12 @@ const routes: Routes = [
       import('./main/popup/popup.module').then((mod) => mod.PopupModule),
   },
   {
-    path: 'share',
-    component: ShareComponent,
+    path: 'media',
+    component: MediaComponent,
+  },
+  {
+    path: 'game',
+    component: GameComponent,
   },
 ];
 
