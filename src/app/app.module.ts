@@ -22,6 +22,7 @@ import { PopupModule } from './main/popup/popup.module';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { MediaComponent } from './main/media/media.component';
 import { ScreenshotComponent } from './main/media/screenshot/screenshot.component';
+import { GameComponent } from './main/game/game.component';
 // import { FacebookModule } from 'ngx-facebook';
 
 @NgModule({
@@ -40,6 +41,7 @@ import { ScreenshotComponent } from './main/media/screenshot/screenshot.componen
     PopupComponent,
     MediaComponent,
     ScreenshotComponent,
+    GameComponent,
   ],
   imports: [
     BrowserModule,

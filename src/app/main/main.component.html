@@ -1,4 +1,13 @@
-<div class="items-center bg-cyan-600 w-[300px] h-screen">
+<div class="more-bar">
+  <button (click)="clickMenu()">
+    <i class="fa-solid fa-bars text-cyan-600"></i>
+  </button>
+</div>
+<div
+  class="items-center bg-cyan-600 w-[300px] h-screen"
+  [ngClass]="{ 'left-bar': menuHasOpen }"
+>
+  <div></div>
   <h1 class="flex justify-center py-4 text-stone-50 text-xl">
     Nu's Angular Modules
   </h1>
