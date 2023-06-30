@@ -10,6 +10,7 @@ import { EditorComponent } from './main/editor/editor.component';
 import { ShareComponent } from './main/share/share.component';
 import { MediaComponent } from './main/media/media.component';
 import { GameComponent } from './main/game/game.component';
+import { TestComponent } from './main/test/test.component';
 
 const routes: Routes = [
   {
@@ -56,6 +57,10 @@ const routes: Routes = [
   {
     path: 'game',
     component: GameComponent,
+  },
+  {
+    path: 'test',
+    component: TestComponent,
   },
 ];
 

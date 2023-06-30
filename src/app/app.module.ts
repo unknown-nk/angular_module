@@ -24,6 +24,7 @@ import { MediaComponent } from './main/media/media.component';
 import { ScreenshotComponent } from './main/media/screenshot/screenshot.component';
 import { GameComponent } from './main/game/game.component';
 import { SnakeComponent } from './main/game/snake/snake.component';
+import { TestComponent } from './main/test/test.component';
 // import { FacebookModule } from 'ngx-facebook';
 
 @NgModule({
@@ -44,6 +45,7 @@ import { SnakeComponent } from './main/game/snake/snake.component';
     ScreenshotComponent,
     GameComponent,
     SnakeComponent,
+    TestComponent,
   ],
   imports: [
     BrowserModule,
